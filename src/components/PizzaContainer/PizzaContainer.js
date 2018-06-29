@@ -14,7 +14,8 @@ class PizzaContainer extends PureComponent {
     {
       this.props.speedDelivery(1.1)
     } else {
-      this.props.speedDelivery(0.90)
+      // THIS IS NOT CORRECT I KNOW I JUST HAD A HARD TIME FINDING THE RIGHT SOLUTION
+      this.props.speedDelivery(0.91000001)
     }
   }
 
@@ -53,8 +54,7 @@ class PizzaContainer extends PureComponent {
           <h2>{this.props.pizza.topping2}</h2>
           <h2>{this.props.pizza.topping3}</h2>
 
-
-          <h3>Total Price: € {this.props.pizza.price}</h3>
+          <h3>Total Price: € { parseFloat(this.props.pizza.price).toFixed(2) }</h3>
 
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" id="speedDeliveryCheckbox" onChange={this.handleChange}/>

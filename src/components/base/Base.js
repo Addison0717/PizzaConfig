@@ -5,7 +5,7 @@ import { addItem } from '../../actions/additem'
 class Base extends PureComponent {
   state = {
     base: '',
-    price: 0
+    basePrice: 0
   }
 
   handleSubmit = (e) => {
@@ -17,7 +17,7 @@ class Base extends PureComponent {
     const baseItem = e.target.value.split(",")
     this.setState({
       base: baseItem[0],
-      price: parseFloat(baseItem[1])
+      basePrice: parseFloat(baseItem[1])
     })
   }
 
@@ -36,10 +36,10 @@ class Base extends PureComponent {
             <label for="baseSelector">Select your base</label>
             <select className="form-control" id="baseSelector" value={this.state.value} onChange={this.handleChange}>
               <option value=""> Select a base </option>
-              <option value="20cm,6.45"> 20cm NY Style € 6,45 </option>
-              <option value="25cm,8.99"> 25cm NY Style € 8,99 </option>
-              <option value="30cm,11.49" value2="11.49"> 30cm NY Style € 11,49 </option>
-              <option value="35cm,13.49" value2="13.49"> 35cm NY Style € 13,49 </option>
+              <option value="20cm NY,6.45"> 20cm NY Style € 6,45 </option>
+              <option value="25cm NY,8.99"> 25cm NY Style € 8,99 </option>
+              <option value="30cm NY,11.49" value2="11.49"> 30cm NY Style € 11,49 </option>
+              <option value="35cm NY,13.49" value2="13.49"> 35cm NY Style € 13,49 </option>
             </select>
           </div>
 

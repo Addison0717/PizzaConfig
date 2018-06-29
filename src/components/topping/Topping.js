@@ -5,9 +5,11 @@ import { addItem } from '../../actions/additem'
 class Topping extends PureComponent {
   state = {
     topping1: '',
+    topping1Price: 0,
     topping2: '',
+    topping2Price: 0,
     topping3: '',
-    price: 0
+    topping3Price: 0,
   }
 
   handleSubmit = (e) => {
@@ -19,21 +21,21 @@ class Topping extends PureComponent {
     const toppingOne = e.target.value.split(",")
     this.setState({
       topping1: toppingOne[0],
-      price: this.state.price + parseFloat(toppingOne[1])
+      topping1Price: parseFloat(toppingOne[1])
     })
   }
   handleChange2 = (e) => {
     const toppingTwo = e.target.value.split(",")
     this.setState({
       topping2: toppingTwo[0],
-      price: this.state.price + parseFloat(toppingTwo[1])
+      topping2Price: parseFloat(toppingTwo[1])
     })
   }
   handleChange3 = (e) => {
     const toppingThree = e.target.value.split(",")
     this.setState({
       topping3: toppingThree[0],
-      price: this.state.price + parseFloat(toppingThree[1])
+      topping3Price: parseFloat(toppingThree[1])
     })
   }
 

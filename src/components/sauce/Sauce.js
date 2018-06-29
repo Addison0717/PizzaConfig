@@ -5,7 +5,7 @@ import { addItem } from '../../actions/additem'
 class Sauce extends PureComponent {
   state = {
     sauce: '',
-    price: 0
+    saucePrice: 0
   }
 
   handleSubmit = (e) => {
@@ -17,7 +17,7 @@ class Sauce extends PureComponent {
     const sauceItem = e.target.value.split(",")
     this.setState({
       sauce: sauceItem[0],
-      price: parseFloat(sauceItem[1])
+      saucePrice: parseFloat(sauceItem[1])
     })
   }
 
