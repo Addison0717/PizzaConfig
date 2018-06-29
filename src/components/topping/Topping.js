@@ -46,7 +46,6 @@ class Topping extends PureComponent {
   render() {
     return (
       <div>
-        <h1> Topping Component Yo </h1>
         <h3> All toppings .50 each! </h3>
 
         <form onSubmit={this.handleSubmit}>
@@ -96,7 +95,7 @@ class Topping extends PureComponent {
             </select>
           </div>
 
-          <button type="submit">Add Toppings!</button>
+          <button type="submit" className="btn btn-secondary">Add Toppings!</button>
 
         </form>
 

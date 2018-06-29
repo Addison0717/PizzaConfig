@@ -28,7 +28,6 @@ class Base extends PureComponent {
   render() {
     return (
       <div>
-        <h1> Base Component Yo</h1>
 
         <form onSubmit={this.handleSubmit}>
 
@@ -43,7 +42,7 @@ class Base extends PureComponent {
             </select>
           </div>
 
-          <button type="submit">Add Base!</button>
+          <button type="submit" className="btn btn-secondary">Add Base!</button>
 
         </form>
 

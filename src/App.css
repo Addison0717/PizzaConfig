@@ -1,0 +1,53 @@
+.mainHeading {
+  text-align: center;
+  padding:20px 0px 5px 0px;
+  font-family: 'Patua One', sans-serif;
+}
+
+.secondaryHeading {
+  text-align: center;
+  padding:15px 0px 10px 0px;
+  font-family: 'Patua One', sans-serif;
+}
+
+.selectors {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.baseSection {
+  background-color: rgb(255, 236, 110);
+  padding: 20px;
+}
+
+.baseClick {
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Patua One', sans-serif;
+}
+
+.sauceSection {
+  background-color: rgb(255, 162, 110);
+  padding: 20px;
+}
+
+.sauceClick {
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Patua One', sans-serif;
+}
+
+.toppingSection {
+  background-color: rgb(161, 255, 110);
+  padding: 20px;
+}
+
+.toppingClick {
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Patua One', sans-serif;
+}
+
+.checkout {
+  padding: 20px 50px;
+}

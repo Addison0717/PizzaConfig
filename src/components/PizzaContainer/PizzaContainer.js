@@ -23,27 +23,32 @@ class PizzaContainer extends PureComponent {
     return (
       <div>
 
-        <h1> This is the MFn Pizza Maker DUDE </h1>
+        <div className="selectors">
 
-        <div data-toggle="collapse" href="#base" role="button" aria-expanded="false">Base</div>
+          <h1 className="mainHeading"> New Age Pizza </h1>
+          <h3 className="secondaryHeading"> Select a category below to begin! </h3>
 
-        <div className="collapse" id="base">
-          <Base />
+          <div data-toggle="collapse" href="#base" role="button" aria-expanded="false" className="baseSection baseClick">Base</div>
+
+          <div className="collapse baseSection" id="base">
+            <Base />
+          </div>
+
+          <div data-toggle="collapse" href="#sauce" role="button" aria-expanded="false" className="sauceSection sauceClick">Sauce</div>
+
+          <div className="collapse sauceSection" id="sauce">
+            <Sauce />
+          </div>
+
+          <div data-toggle="collapse" href="#topping" role="button" aria-expanded="false" className="toppingSection toppingClick">Toppings</div>
+
+          <div className="collapse toppingSection" id="topping">
+            <Topping />
+          </div>
+
         </div>
 
-        <div data-toggle="collapse" href="#sauce" role="button" aria-expanded="false">Sauce</div>
-
-        <div className="collapse" id="sauce">
-          <Sauce />
-        </div>
-
-        <div data-toggle="collapse" href="#topping" role="button" aria-expanded="false">Toppings</div>
-
-        <div className="collapse" id="topping">
-          <Topping />
-        </div>
-
-        <div className="Checkout">
+        <div className="checkout">
 
           <h1>Checkout</h1>
 
